@@ -10,9 +10,10 @@ import './index.css'
 const routes = (
   <Router>
     <Routes>
-      <Route path="/dashboard" exact element = { <Home /> }  />
-      <Route path="/login" exact element = { <Login /> }  />
-      <Route path="/signup" exact element = { <SignUp /> }  />
+      <Route path="/"  element = { <Login /> } />
+      <Route path="/dashboard"   element = { <Home /> }  />
+      <Route path="/login"   element = { <Login /> }  />
+      <Route path="/signup"   element = { <SignUp /> }  />
 
 
 
@@ -26,7 +27,7 @@ const routes = (
 
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
    <div>

@@ -155,9 +155,9 @@ const Home =() =>{
     return (
        <>
        <Navbar userInfo = {userInfo}  onSearchNote={onSearchNote}  handleClearSearch={handleClearSearch}/>
-
-        <div className="container mx-auto px-8">
-            {allNotes.length > 0 ?   (<div className="grid grid-cols-3 gap-4 mt-8">
+        <div className="notecard mt-20 ">
+            <div className="container mx-auto px-8">
+            {allNotes.length > 0 ?   (<div className="grid grid-cols-3 note-grid gap-4 mt-8">
                 {allNotes.map((item,index) => (
                     <NoteCard 
                     key = {item._id}
@@ -173,9 +173,9 @@ const Home =() =>{
                 ))}
                 
             </div>) : (<EmptyCard imgSrc={AddNotesImg} /> )}
+            </div>
         </div>
-
-        <button className="w-16 h-16 flex items-center justify-center rounded-2xl bg-primary hover:bg-[#795C34] absolute right-10 bottom-10" 
+        <button className="add-note-button fixed  right-10 bottom-10 w-16 h-16 flex items-center justify-center rounded-2xl bg-primary hover:bg-[#795C34]  " 
             onClick={() => { 
                 setOpenAddEditModal({ isShown: true, type: "add" , data: null }) ;
             }}>

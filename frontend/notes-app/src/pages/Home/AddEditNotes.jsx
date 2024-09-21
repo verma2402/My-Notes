@@ -74,7 +74,7 @@ const AddEditNotes = ({ noteData , type, getAllNotes , onClose , showToastMessag
 
     return (
 <>
-    <div className="relative">
+    <div className="relative ">
 
         <button className="w-10 h-10 rounded-full flex items-center justify-center absolute -top-3 -right-3 hover:bg-slate-500 "     
             onClick={onClose}>
@@ -88,7 +88,7 @@ const AddEditNotes = ({ noteData , type, getAllNotes , onClose , showToastMessag
             <input
                 type="text"
                 className="text-2xl text-slate-950 outline-none"
-                placeholder="Go To Gym At 5"
+                placeholder="Your task"
                 value={title}
                 onChange={({target}) => setTitle(target.value)}
             />

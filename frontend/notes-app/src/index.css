@@ -33,4 +33,117 @@
     @apply text-xs text-slate-400;
   }
 
+  
 } 
+ /*  login  */
+@media (max-width: 640px) {
+  .input-box {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .btn-primary {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 20vh auto;
+    padding-left: 2vh;
+    padding-right: 2vh;
+  }
+
+  .form-container h4 {
+    font-size: 1.5rem; /* Smaller font size for mobile */
+  }
+}
+ 
+/*  card   */
+.container {
+  @apply mx-auto px-8; /* Default padding */
+}
+
+@media (max-width: 768px) {
+  .container {
+    @apply px-4; /* Reduced padding for mobile screens */
+  }
+}
+
+.note-grid {
+  @apply grid grid-cols-3 gap-4 mt-8; /* Default layout for larger screens */
+}
+@media (max-width: 768px) {
+  .note-grid {
+    @apply grid-cols-1; /* One card per row */
+  }
+}
+
+
+
+/* button */
+.add-note-button {
+  @apply  w-16 h-16 flex items-center justify-center rounded-2xl bg-primary hover:bg-[#795C34] fixed right-10 bottom-10;
+}
+
+@media (max-width: 768px) {
+  .add-note-button {
+    @apply w-12 h-12 fixed right-4 bottom-4; /* Smaller button for mobile */
+  }
+}
+
+/* navbar */
+.navbar {
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50; /* Ensure navbar is on top */
+}
+
+/* Styles for small screens (mobile) */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .navbar .flex-row {
+      flex-direction: column;
+  }
+
+  .navbar h2 {
+    
+    font-size: 18px;
+  }
+  
+
+  .search-bar {
+       
+      margin-right: 8px; 
+      margin-left:10px;
+  }
+}
+ 
+/* profile info  */
+@media (max-width: 768px) {
+  .profile-info {
+    width: 18px;   
+    height: 18px;  
+    font-size: 0.8rem; 
+  }
+
+  .profile-info p {
+    font-size: 0.9rem;  
+  }
+  
+  .p-info {
+    gap: 0.5rem; /* Adjust gap for mobile screens */
+  }
+
+}
+
+
+ 

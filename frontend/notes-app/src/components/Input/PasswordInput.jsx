@@ -8,7 +8,6 @@ import { FaRegEye, FaRegEyeSlash } from "react-icons/fa6";
 
 
 
-
 const PasswordInput = ({ value, onChange, placeholder }) => {
 
     const [isShowPassword, setIsShowPAssword] = useState(false);

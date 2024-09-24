@@ -44,7 +44,7 @@ const Login = () => {
         }
         catch (error) {
             // handle login error
-            console.error("error", error);
+            console.log("error", error);
             if (error.response && error.response.data && error.response.data.message) {
                 setError(error.response.data.message);
             } else {
